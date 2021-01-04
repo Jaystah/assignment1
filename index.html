@@ -2,10 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermarket</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <table class="productTable">
+        <caption>Products</caption>
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Best_before_date</th>
+            <th>Origin</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Brood.jpg" alt="whiteBread"></td>
+            <td class="product">White Bread</td>
+            <td>5</td>
+            <td>3 February 2021</td>
+            <td class="origin">The Netherlands</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Toiletpapier_%28Gobran111%29.jpg/390px-Toiletpapier_%28Gobran111%29.jpg" alt="whiteBread"></td>
+            <td class="product">Toilet Paper</td>
+            <td>10</td>
+            <td>March 2025</td>
+            <td class="origin">The Netherlands</td>
+        </tr>
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Mandarin_Oranges_%28Citrus_Reticulata%29.jpg/399px-Mandarin_Oranges_%28Citrus_Reticulata%29.jpg" alt="whiteBread"></td>
+            <td class="product">Mandarin Oranges</td>
+            <td>7 kg</td>
+            <td>22 January 2021</td>
+            <td class="origin">Spain</td>
+        </tr>
+        <tr>
+            <td class="addSentence" colspan="5">Add your own product</td>
+        </tr>
+        <tr>
+            <form action="https://wt.ops.labs.vu.nl/api21/096ff881" method="post">
+                <td><input type="text" name="imgUrl" placeholder="Image url"></td>
+                <td><input type="text" name="productName" placeholder="Product name"></td>
+                <td><input type="number" name="amount" placeholder="Amount"></td>
+                <td><input type="date" name="productDate"></td>
+                <td><input type="text" name="productOrigin" placeholder="Origin"></td>
+            
+        </tr>
+        <tr>
+           <td colspan="5"> <input class="submitBtn" type="submit" colspan="5" value="Add product"/></td>
+        </tr>
+    </form>
+
+        </tbody>
+    </table>
 </body>
 </html>

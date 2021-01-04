@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    width: 60px;
+    height: 60px;
+}
+
+table,th,td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td,th{
+    padding: 5px;
+    text-align: center;
+    background-color: #f0ebdf;
+}
+th{
+    color:#918091;
+}
+.product{
+    font-style: italic;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-style: oblique;
+}
+.origin{
+    font-variant: small-caps;
+}
+.addSentence{
+    border-width: 2px;
+}
+.submitBtn{
+    border: none;
+    padding: 5px 50px 5px 50px;
+    background-color: #e6c065;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.submitBtn:hover{
+    transition: 0.5s;
+    background-color: #b0831a;
+    cursor: pointer;
+    color: #dbdad7;
+}
